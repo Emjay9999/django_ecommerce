@@ -61,3 +61,26 @@ def delete_product(request, pk):
 
 	return render(request, "delete_product.html", {"product":product})
 
+
+def add_cart(request, ):
+	context={
+
+	}
+	return render(request, "add_cart.html", context)
+
+
+def empty_cart(request, ):
+	context={
+
+	}
+	return render(request, "empty_cart.html", context)
+
+
+def details(request, pk):
+	product = Product.objects.get(pk=pk)
+	context = {
+		"product": product
+	}
+	return render(request, "details.html", context)
+
+

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Details{% endblock %}
+
+{% block main %}
+
+	<div class="col-md-4">
+        <img src="" alt="">
+    </div>
+    <div class="card-body">
+
+        {{ product.id }}
+        <h3 class="card-title">{{ product.name }}</h3>
+        <h4 class="card-title">{{ product.price }}</h4>
+        <p class="card-text">{{ product.description }}</p>
+
+    </div>
+
+{% endblock %}
